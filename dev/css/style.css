@@ -1,6 +1,45 @@
 
-
+header {
+  height: 20vh;
+}
 .card {
   background-color: #fff;
-  height: 200px;
+  height: 60vh;
+
+}
+
+.quote {
+  background-color: #fff;
+  border: 3px solid black;
+  height: 50%;
+}
+
+.attrib {
+    border: 3px solid black;
+    height: 25%;
+}
+
+.button-row {
+    border: 3px solid black;
+    height: 25%;
+}
+
+.fa-quote-left{
+  content:"\f174";
+  [&#xf10d;]
+}
+
+.fa-tumblr-square{
+  font-size: 3em;
+  content:"\f174";
+}
+
+.fa-twitter-square {
+  content:"\f099";
+  font-size: 3em;
+}
+
+i {
+  margin-left: 5px;
+
 }
