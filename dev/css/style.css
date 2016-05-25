@@ -2,31 +2,39 @@
 header {
   height: 20vh;
 }
+
+button {
+  color: #fff;
+  height: 42px;
+  border-radius: 10%;
+  float: right;
+}
+
+
 .card {
   background-color: #fff;
   height: 60vh;
-
 }
 
 .quote {
+  margin-top: 20px;
   background-color: #fff;
-  border: 3px solid black;
   height: 50%;
+  font-size: 2em;
 }
 
 .attrib {
-    border: 3px solid black;
-    height: 25%;
+  height: 25%;
+  font-size: 3em;
+  text-align: right;
 }
 
 .button-row {
-    border: 3px solid black;
-    height: 25%;
+  height: 25%;
 }
 
 .fa-quote-left{
-  content:"\f174";
-  [&#xf10d;]
+  content:"\f10d";
 }
 
 .fa-tumblr-square{
@@ -41,5 +49,4 @@ header {
 
 i {
   margin-left: 5px;
-
 }
