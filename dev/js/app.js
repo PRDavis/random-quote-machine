@@ -14,13 +14,17 @@ var getNewQuote = function(){
   $.ajax({
     type: 'GET',
     url: url,
-    jsonpCallback: 'jsonCallback',
+    jsonpCallback: 'jsonpCallback',
     contentType: "application/json",
     dataType: 'jsonp',
     success: function(data) {
+      return;
     },
-    error: function(e) {
-      console.log(e.message);
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log('An error occurred... ');
+      console.log('jqXHR:', jqXHR);
+      console.log('textStatus:', textStatus);
+      console.log('errorThrown:', errorThrown);
     }
   }
 );
@@ -32,9 +36,6 @@ function jsonpCallback(data){
   title = "- " + title;
   content = content.slice(3);
   content = content.slice(0,-5);
-  if (content.length > 249) {
-    getNewQuote();
-  }
   colorEverything();
   $('.put-quote-here').html(content);
   $('.put-attrib-here').html(title);

@@ -13,13 +13,14 @@ button {
 
 .card {
   background-color: #fff;
-  height: 60vh;
+  text-align: right;
+
 }
 
 .quote {
   margin-top: 20px;
   background-color: #fff;
-  height: 50%;
+  /*height: 50%;*/
   font-size: 2em;
 }
 
@@ -30,7 +31,7 @@ button {
 }
 
 .button-row {
-  height: 25%;
+  margin-bottom: 25px;
 }
 
 .fa-quote-left{
@@ -49,4 +50,7 @@ button {
 
 i {
   margin-left: 5px;
+}
+.outline {
+  border: 3px solid black;  
 }
