@@ -41,10 +41,6 @@ function jsonpCallback(data){
   $('.put-quote-here').html(content);
   $('.put-attrib-here').html(title);
   $('.tweetOut').attr("href", tweetUrl + "?text=" + content + "  -" + title);
-
-
-
-
 }
 
 var colorEverything = function() {
@@ -53,7 +49,7 @@ var colorEverything = function() {
   $("body").css("background-color", randColor);
   $("button").css("background-color", randColor);
   $("i").css("color", randColor);
-  
+
 };
 
 var init = function(){

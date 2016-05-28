@@ -10,6 +10,18 @@ button {
   float: right;
 }
 
+.footerLink {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  margin: auto;
+
+}
+
+.attribFooter {
+  text-align: center;
+}
+
 
 .card {
   background-color: #fff;
@@ -41,11 +53,6 @@ button {
   content:"\f10d";
 }
 
-.fa-reddit-square {
-  content:"\f1a2";
-  font-size: 3em;
-}
-
 .fa-twitter-square {
   content:"\f099";
   font-size: 3em;
@@ -54,6 +61,8 @@ button {
 i {
   margin-left: 5px;
 }
-.outline {
-  border: 3px solid black;
+
+.attribFooter a, .footerLink a:link, .footerLink a:visited, .footerLink a:hover, .footerLink a:active, .footerLink a:focus {
+  text-decoration: none;
+  color: #fff;
 }
