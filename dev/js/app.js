@@ -1,4 +1,5 @@
 
+var tweetUrl = "https://twitter.com/intent/tweet";
 
 var colorGen = function(){
   var possibles = "0123456789ABCDEF".split('');
@@ -39,6 +40,11 @@ function jsonpCallback(data){
   colorEverything();
   $('.put-quote-here').html(content);
   $('.put-attrib-here').html(title);
+  $('.tweetOut').attr("href", tweetUrl + "?text=" + content + "  -" + title);
+
+
+
+
 }
 
 var colorEverything = function() {
@@ -47,6 +53,7 @@ var colorEverything = function() {
   $("body").css("background-color", randColor);
   $("button").css("background-color", randColor);
   $("i").css("color", randColor);
+  
 };
 
 var init = function(){

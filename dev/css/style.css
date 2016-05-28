@@ -13,8 +13,11 @@ button {
 
 .card {
   background-color: #fff;
-  text-align: right;
+  /*text-align: right;*/
+}
 
+.social a {
+  text-decoration: none;
 }
 
 .quote {
@@ -38,9 +41,9 @@ button {
   content:"\f10d";
 }
 
-.fa-tumblr-square{
+.fa-reddit-square {
+  content:"\f1a2";
   font-size: 3em;
-  content:"\f174";
 }
 
 .fa-twitter-square {
@@ -52,5 +55,5 @@ i {
   margin-left: 5px;
 }
 .outline {
-  border: 3px solid black;  
+  border: 3px solid black;
 }
